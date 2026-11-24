@@ -1,0 +1,29 @@
+,precision,recall,f1-score,support
+Advocate,1.0,1.0,1.0,2.0
+Arts,1.0,1.0,1.0,1.0
+Automation Testing,0.5,1.0,0.667,1.0
+Blockchain,0.0,0.0,0.0,1.0
+Business Analyst,0.5,1.0,0.667,1.0
+Civil Engineer,1.0,1.0,1.0,1.0
+Data Science,1.0,1.0,1.0,2.0
+Database,1.0,1.0,1.0,2.0
+DevOps Engineer,1.0,1.0,1.0,1.0
+DotNet Developer,1.0,1.0,1.0,2.0
+ETL Developer,1.0,1.0,1.0,1.0
+Electrical Engineering,1.0,1.0,1.0,1.0
+HR,1.0,1.0,1.0,2.0
+Hadoop,1.0,1.0,1.0,2.0
+Health and fitness,1.0,1.0,1.0,1.0
+Java Developer,0.6,1.0,0.75,3.0
+Mechanical Engineer,0.0,0.0,0.0,1.0
+Network Security Engineer,1.0,1.0,1.0,1.0
+Operations Manager,0.5,1.0,0.667,1.0
+PMO,0.0,0.0,0.0,1.0
+Python Developer,1.0,1.0,1.0,1.0
+SAP Developer,1.0,1.0,1.0,1.0
+Sales,1.0,1.0,1.0,1.0
+Testing,1.0,0.5,0.667,2.0
+Web Designing,0.0,0.0,0.0,1.0
+accuracy,0.853,0.853,0.853,0.853
+macro avg,0.764,0.82,0.777,34.0
+weighted avg,0.803,0.853,0.811,34.0

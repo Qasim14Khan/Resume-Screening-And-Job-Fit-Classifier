@@ -1,0 +1,293 @@
+{
+  "n_resumes": 166,
+  "n_categories": 25,
+  "removed_duplicates_or_empty": 796,
+  "cv_folds": 2,
+  "classification": {
+    "Logistic Regression": {
+      "best_params": {
+        "C": 10
+      },
+      "cv_accuracy": 0.6515,
+      "acc_before_tuning": 0.4706,
+      "acc_after_tuning": 0.8529,
+      "train_accuracy": 1.0,
+      "precision": 0.764,
+      "recall": 0.82,
+      "f1": 0.7767
+    },
+    "Naive Bayes": {
+      "best_params": {
+        "alpha": 0.1
+      },
+      "cv_accuracy": 0.5833,
+      "acc_before_tuning": 0.3235,
+      "acc_after_tuning": 0.7353,
+      "train_accuracy": 1.0,
+      "precision": 0.635,
+      "recall": 0.7,
+      "f1": 0.6472
+    }
+  },
+  "best_model": "Logistic Regression",
+  "deployed_model": "Logistic Regression",
+  "deployed_test_accuracy": 0.8529,
+  "top_words_per_category": {
+    "Advocate": [
+      "advocate",
+      "law",
+      "legal",
+      "llb",
+      "court",
+      "advocate skill",
+      "maharashtra board",
+      "high court"
+    ],
+    "Arts": [
+      "arts",
+      "total",
+      "karate",
+      "championship",
+      "karate championship",
+      "commerce science",
+      "arts commerce",
+      "painting"
+    ],
+    "Automation Testing": [
+      "automation",
+      "automation testing",
+      "selenium",
+      "tester",
+      "testing",
+      "manual",
+      "manual automation",
+      "automation tester"
+    ],
+    "Blockchain": [
+      "blockchain",
+      "smart",
+      "blockchain developer",
+      "ethereum",
+      "smart contracts",
+      "contracts",
+      "virtual",
+      "school blockchain"
+    ],
+    "Business Analyst": [
+      "business analyst",
+      "analyst",
+      "functional",
+      "business",
+      "requirement",
+      "analyst business",
+      "gathering",
+      "report"
+    ],
+    "Civil Engineer": [
+      "civil",
+      "civil engineer",
+      "site",
+      "engineer",
+      "construction",
+      "site engineer",
+      "civil engineering",
+      "engineer civil"
+    ],
+    "Data Science": [
+      "data science",
+      "machine learning",
+      "learning",
+      "python",
+      "machine",
+      "data",
+      "year months",
+      "learning exprience"
+    ],
+    "Database": [
+      "database administrator",
+      "database",
+      "administrator",
+      "backup",
+      "installation",
+      "oracle",
+      "databases",
+      "log"
+    ],
+    "DevOps Engineer": [
+      "devops",
+      "devops engineer",
+      "team size",
+      "size role",
+      "aws",
+      "size",
+      "shell",
+      "project"
+    ],
+    "DotNet Developer": [
+      "asp",
+      "net",
+      "asp net",
+      "mvc",
+      "net developer",
+      "net mvc",
+      "dot net",
+      "dot"
+    ],
+    "ETL Developer": [
+      "etl",
+      "informatica",
+      "etl developer",
+      "yes",
+      "data warehouse",
+      "unix",
+      "warehouse",
+      "mappings"
+    ],
+    "Electrical Engineering": [
+      "electrical",
+      "weeks",
+      "electrical engineering",
+      "power",
+      "lt",
+      "course",
+      "safety",
+      "ht"
+    ],
+    "HR": [
+      "hr",
+      "hr skill",
+      "university hr",
+      "mba",
+      "details",
+      "dynamics",
+      "tamil nadu",
+      "tamil"
+    ],
+    "Hadoop": [
+      "hadoop",
+      "hive",
+      "hdfs",
+      "sqoop",
+      "spark",
+      "mapreduce",
+      "cluster",
+      "hadoop developer"
+    ],
+    "Health and fitness": [
+      "fitness",
+      "gym",
+      "nutrition",
+      "columbia",
+      "health",
+      "hotel",
+      "trainer",
+      "columbia university"
+    ],
+    "Java Developer": [
+      "java developer",
+      "java",
+      "developer",
+      "spring",
+      "jsp",
+      "hibernate",
+      "ee",
+      "developer java"
+    ],
+    "Mechanical Engineer": [
+      "mechanical",
+      "mechanical engineering",
+      "design engineer",
+      "student association",
+      "student",
+      "association",
+      "conducted",
+      "engineering student"
+    ],
+    "Network Security Engineer": [
+      "cisco",
+      "network security",
+      "network",
+      "firewall",
+      "configuration",
+      "security",
+      "switches",
+      "troubleshoot"
+    ],
+    "Operations Manager": [
+      "operations",
+      "operations manager",
+      "ensuring",
+      "timely",
+      "procedures",
+      "emails",
+      "manager operations",
+      "contributions"
+    ],
+    "PMO": [
+      "managers",
+      "pmo",
+      "project management",
+      "risk",
+      "report",
+      "resource",
+      "risks",
+      "sla"
+    ],
+    "Python Developer": [
+      "python developer",
+      "python",
+      "pune",
+      "science pune",
+      "developer",
+      "organisation",
+      "pune maharashtra",
+      "rest"
+    ],
+    "SAP Developer": [
+      "sap",
+      "abap",
+      "months sap",
+      "abap developer",
+      "bo",
+      "experience sap",
+      "sap bo",
+      "hana"
+    ],
+    "Sales": [
+      "sales manager",
+      "sales",
+      "manager",
+      "calling",
+      "leads",
+      "sales exprience",
+      "cold",
+      "months sales"
+    ],
+    "Testing": [
+      "testing",
+      "testing engineer",
+      "test",
+      "electronics pvt",
+      "engineer",
+      "transformer",
+      "assembly",
+      "electronics"
+    ],
+    "Web Designing": [
+      "designer",
+      "allahabad",
+      "web designer",
+      "salary",
+      "web",
+      "graphics",
+      "working salary",
+      "allahabad uttar"
+    ]
+  },
+  "clustering": {
+    "best_k": 20,
+    "silhouette": 0.0337,
+    "kmeans_ARI": 0.4839,
+    "kmeans_NMI": 0.7601
+  }
+}
