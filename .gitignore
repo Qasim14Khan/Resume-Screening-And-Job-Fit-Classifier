@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-.pytest_cache/
-.ipynb_checkpoints/
-.venv/
-venv/
-models/
-Data/*.csv
-data/*.csv
