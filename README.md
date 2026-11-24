@@ -1,5 +1,7 @@
 # Resume Screening & Job-Fit Classifier
 
+🔗 **Live demo:** https://resume-screening-and-job-fit-classifier-2vxi8gtckgseiwlqfkyrxe.streamlit.app
+
 A dashboard that ranks resumes against a job description and tells a recruiter **what to do next**: shortlist, review by hand, or check for keyword stuffing.
 
 Built for AI-3202 Machine Learning Practical (DUET Karachi), Lab 14.
