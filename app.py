@@ -51,8 +51,9 @@ bundle = get_bundle()
 # ---------------------------------------------------------------- sidebar
 st.sidebar.title("📄 Resume Screening")
 st.sidebar.caption("Rank resumes against a job and see what to do next")
-preset = st.sidebar.selectbox("Job to fill", list(JOB_PRESETS))
-jd = st.sidebar.text_area("Job description (editable)", value=JOB_PRESETS[preset], height=170, key=f"jd_{preset}")
+preset = st.sidebar.selectbox("Job title", list(JOB_PRESETS))
+jd = JOB_PRESETS[preset]
+st.sidebar.text_area("Job description", value=jd, height=170, disabled=True, key=f"jd_{preset}")
 use_samples = st.sidebar.checkbox("Also include the sample resumes", value=False,
                                   help="Loads the PDF/DOCX/TXT resumes from the sample_resumes folder so the dashboard is never empty.")
 demo_mode = st.sidebar.checkbox("Demo mode: show true field from file name", value=False,

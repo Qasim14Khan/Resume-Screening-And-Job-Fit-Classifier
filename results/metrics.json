@@ -1,7 +1,8 @@
 {
+  "removed_duplicates_or_empty": 796,
   "n_resumes": 166,
   "n_categories": 25,
-  "removed_duplicates_or_empty": 796,
+  "imbalance_ratio_max_min": 4.33,
   "cv_folds": 2,
   "classification": {
     "Logistic Regression": {
@@ -30,8 +31,6 @@
     }
   },
   "best_model": "Logistic Regression",
-  "deployed_model": "Logistic Regression",
-  "deployed_test_accuracy": 0.8529,
   "top_words_per_category": {
     "Advocate": [
       "advocate",
@@ -288,6 +287,216 @@
     "best_k": 20,
     "silhouette": 0.0337,
     "kmeans_ARI": 0.4839,
-    "kmeans_NMI": 0.7601
-  }
+    "kmeans_NMI": 0.7601,
+    "cluster_top_terms": {
+      "0": [
+        "sap",
+        "hana",
+        "bo",
+        "views",
+        "webi",
+        "universe",
+        "reports",
+        "objects"
+      ],
+      "1": [
+        "analyst",
+        "cash",
+        "business",
+        "maintain",
+        "excel",
+        "mumbai",
+        "responsibilities",
+        "requirement"
+      ],
+      "2": [
+        "year",
+        "months",
+        "data",
+        "exprience",
+        "python",
+        "matlab",
+        "science",
+        "learning"
+      ],
+      "3": [
+        "civil",
+        "engineer",
+        "site",
+        "construction",
+        "autocad",
+        "engineering",
+        "mechanical",
+        "mumbai"
+      ],
+      "4": [
+        "java",
+        "developer",
+        "jsp",
+        "ajax",
+        "hibernate",
+        "spring",
+        "jquery",
+        "servlet"
+      ],
+      "5": [
+        "sales",
+        "fitness",
+        "manager",
+        "marketing",
+        "office",
+        "arts",
+        "ms",
+        "team"
+      ],
+      "6": [
+        "electrical",
+        "power",
+        "engineering",
+        "transformer",
+        "panel",
+        "weeks",
+        "control",
+        "maintenance"
+      ],
+      "7": [
+        "management",
+        "business",
+        "process",
+        "quality",
+        "team",
+        "project",
+        "requirements",
+        "client"
+      ],
+      "8": [
+        "advocate",
+        "legal",
+        "law",
+        "llb",
+        "court",
+        "university",
+        "details",
+        "january"
+      ],
+      "9": [
+        "database",
+        "backup",
+        "installation",
+        "oracle",
+        "servers",
+        "administrator",
+        "server",
+        "databases"
+      ],
+      "10": [
+        "hadoop",
+        "hive",
+        "hdfs",
+        "sqoop",
+        "spark",
+        "data",
+        "cluster",
+        "mapreduce"
+      ],
+      "11": [
+        "net",
+        "dot",
+        "asp",
+        "mvc",
+        "developer",
+        "web",
+        "pune",
+        "sql"
+      ],
+      "12": [
+        "cisco",
+        "network",
+        "firewall",
+        "security",
+        "configuration",
+        "switches",
+        "firewalls",
+        "devices"
+      ],
+      "13": [
+        "hr",
+        "details",
+        "mba",
+        "company",
+        "exprience",
+        "education",
+        "communication",
+        "skill"
+      ],
+      "14": [
+        "etl",
+        "informatica",
+        "test",
+        "testing",
+        "automation",
+        "tech",
+        "sql",
+        "bug"
+      ],
+      "15": [
+        "machine",
+        "learning",
+        "science",
+        "data",
+        "python",
+        "analytics",
+        "business",
+        "visualization"
+      ],
+      "16": [
+        "sap",
+        "abap",
+        "project",
+        "consultant",
+        "exposure",
+        "developer",
+        "major",
+        "fiori"
+      ],
+      "17": [
+        "python",
+        "pune",
+        "maharashtra",
+        "board",
+        "details",
+        "january",
+        "months",
+        "state"
+      ],
+      "18": [
+        "testing",
+        "automation",
+        "months",
+        "exprience",
+        "test",
+        "java",
+        "selenium",
+        "manual"
+      ],
+      "19": [
+        "fitness",
+        "nutrition",
+        "health",
+        "columbia",
+        "golds",
+        "science",
+        "january",
+        "college"
+      ]
+    }
+  },
+  "fit_score_demo": {
+    "true_category": "Data Science",
+    "strong_match": 13.1,
+    "weak_match": 0.1,
+    "keyword_stuffed_resume": 98.4
+  },
+  "deployed_model": "Logistic Regression",
+  "deployed_test_accuracy": 0.8529
 }
