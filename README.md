@@ -1,7 +1,5 @@
 # Resume Screening & Job-Fit Classifier
 
-🔗 **Live demo:** https://resume-screening-and-job-fit-classifier-2vxi8gtckgseiwlqfkyrxe.streamlit.app
-
 A dashboard that ranks resumes against a job description and tells a recruiter **what to do next**: shortlist, review by hand, or check for keyword stuffing.
 
 Built for AI-3202 Machine Learning Practical (DUET Karachi), Lab 14.
@@ -38,6 +36,10 @@ streamlit run app.py
 ```
 
 Run the tests with `pytest`.
+
+## The saved model
+
+`models/resume_model.joblib` is a binary file (a Python dictionary saved with joblib), so GitHub cannot display it as text. It holds the trained pipeline (TF-IDF + Logistic Regression), the label encoder, the K-Means model and the cluster words. It does not contain the training resumes. To see what is inside, run `python inspect_model.py`, or read the readable copy in `results/model_summary.txt`.
 
 ## Using the app
 

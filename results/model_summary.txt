@@ -1,0 +1,34 @@
+File: models/resume_model.joblib  (1758 KB)
+
+The file is ONE Python dictionary (saved with joblib) with these keys:
+  model           -> Pipeline
+  label_encoder   -> LabelEncoder
+  tfidf           -> TfidfVectorizer
+  kmeans          -> KMeans
+  cluster_terms   -> dict
+  model_name      -> str
+
+1) model_name: Logistic Regression
+
+2) model: a scikit-learn Pipeline with these steps:
+   - tfidf: TfidfVectorizer(max_features=5000, ngram_range=(1, 2), sublinear_tf=True)
+   - clf: LogisticRegression(C=10, max_iter=1000)
+   TF-IDF vocabulary size: 5000 words/phrases
+   Classifier weights shape: (25, 5000)  (categories x words)
+
+3) label_encoder: turns 25 category names into numbers 0..24
+   Categories: Advocate, Arts, Automation Testing, Blockchain, Business Analyst, Civil Engineer, Data Science, Database, DevOps Engineer, DotNet Developer, ETL Developer, Electrical Engineering, HR, Hadoop, Health and fitness, Java Developer, Mechanical Engineer, Network Security Engineer, Operations Manager, PMO, Python Developer, SAP Developer, Sales, Testing, Web Designing
+
+   Strongest words the model learned for 3 categories:
+   Advocate: advocate, law, legal, llb, court, advocate skill
+   Arts: arts, total, karate, championship, karate championship, commerce science
+   Automation Testing: automation, automation testing, selenium, tester, testing, manual
+
+4) kmeans: K-Means with 20 clusters (skill groups)
+5) tfidf (second one, for clustering and job-fit scoring): 3000 words
+6) cluster_terms: top words of each cluster, for example
+   Cluster 0: sap, hana, bo, views, webi, universe
+   Cluster 1: analyst, cash, business, maintain, excel, mumbai
+   Cluster 2: year, months, data, exprience, python, matlab
+
+Note: the file holds learned numbers and vocabulary, NOT the training resumes.
