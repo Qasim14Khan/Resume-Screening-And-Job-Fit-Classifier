@@ -51,8 +51,8 @@ bundle = get_bundle()
 # ---------------------------------------------------------------- sidebar
 st.sidebar.title("📄 Resume Screening")
 st.sidebar.caption("Rank resumes against a job and see what to do next")
-NONE, CUSTOM = "Select a job title...", "Custom job (write your own)"
-preset = st.sidebar.selectbox("Job title", [NONE, CUSTOM] + list(JOB_PRESETS), key="job_title")
+NONE = "Select a job title..."
+preset = st.sidebar.selectbox("Job title", [NONE] + list(JOB_PRESETS), key="job_title")
 
 
 def reset_description():
@@ -62,7 +62,7 @@ def reset_description():
 
 jd_start = JOB_PRESETS.get(preset, "")
 jd = st.sidebar.text_area("Job description (you can edit it)", value=jd_start, height=190, key=f"jd_{preset}",
-                          placeholder="Choose a job title above, or choose 'Custom job' and paste a job description here.")
+                          placeholder="Choose a job title above. The description appears here and you can edit it.")
 if preset in JOB_PRESETS:
     st.sidebar.button("Reset description", on_click=reset_description)
 use_samples = st.sidebar.checkbox("Also include the sample resumes", value=False,
@@ -90,7 +90,7 @@ results = screen_all(bundle, resumes, jd) if resumes and jd.strip() else []
 if jd.strip() and resumes and len(results) < len(resumes):
     st.warning("Some files had no readable text (a scanned PDF is an image, not text). Use a text-based PDF, DOCX or TXT.")
 if not jd.strip():
-    st.info("Choose a job title in the sidebar (or 'Custom job' and paste a description) to start screening.")
+    st.info("Choose a job title in the sidebar to start screening.")
 st.caption(f"{preset if jd.strip() else 'No job selected'} · {len(results)} resumes screened · model: {bundle.get('model_name', 'n/a')}")
 
 tab_report, tab_overview, tab_cands, tab_insights, tab_add, tab_perf, tab_about = st.tabs(
