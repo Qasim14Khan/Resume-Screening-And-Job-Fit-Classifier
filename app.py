@@ -51,8 +51,7 @@ bundle = get_bundle()
 # ---------------------------------------------------------------- sidebar
 st.sidebar.title("📄 Resume Screening")
 st.sidebar.caption("Rank resumes against a job and see what to do next")
-NONE = "Select a job title..."
-preset = st.sidebar.selectbox("Job title", [NONE] + list(JOB_PRESETS), key="job_title")
+preset = st.sidebar.selectbox("Job title", list(JOB_PRESETS), index=None, placeholder="Select a job title...", key="job_title")
 
 
 def reset_description():
