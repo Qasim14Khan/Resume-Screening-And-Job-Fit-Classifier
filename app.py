@@ -61,7 +61,7 @@ def reset_description():
 
 
 jd_start = JOB_PRESETS.get(preset, "")
-jd = st.sidebar.text_area("Job description (you can edit it)", value=jd_start, height=190, key=f"jd_{preset}",
+jd = st.sidebar.text_area("Job description", value=jd_start, height=190, key=f"jd_{preset}",
                           placeholder="Choose a job title above. The description appears here and you can edit it.")
 if preset in JOB_PRESETS:
     st.sidebar.button("Reset description", on_click=reset_description)
